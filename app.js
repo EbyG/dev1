@@ -54,7 +54,7 @@ app.get("/",function(req,res)
 
 app.get("/campgrounds",function(req,res)
 {
-    console.log(req.isAuthenticated());
+    //console.log(req.isAuthenticated());
     //console.log(req.authInfo);
     console.log(req.authenticate);
     Campground.find({},function(err,allcamps)
